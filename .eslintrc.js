@@ -7,8 +7,7 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'eslint:recommended',
     'prettier',
-    'prettier/vue',
-  ],
-  plugins: ['vue'],
+    'prettier-standard/prettier-file'
+  ]
 }
 
