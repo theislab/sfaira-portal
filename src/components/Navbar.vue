@@ -140,6 +140,7 @@ export default {
       mobileMenuOpen: false,
       items: [
         { title: 'Home', link: '/' },
+        { title: 'Datasets', link: '/Datasets' },
         { title: 'About', link: '/About' }
       ]
     }
