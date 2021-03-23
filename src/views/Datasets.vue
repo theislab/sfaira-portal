@@ -32,6 +32,7 @@
 
       <div class="px-1 w-full md:w-2/4 flex bg-blue-400 h-full">
         <div class="py-2 my-1 mx-auto overflow-auto flex-grow bg-green-400">
+          {{ this.$store.state.datasets}}
         </div>
         <!-- <CardList :items="cardItems" /> -->
       </div>
