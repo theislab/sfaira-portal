@@ -22,11 +22,7 @@
         >
           Sorting
         </div>
-        <!-- <DropdownSelector
-            prompt="Sort by..."
-            :itemList="sortItems"
-            commitHook="setSortBy"
-          /> -->
+        <DatasetsSorter :fields="sortFields" />
       </div>
     </div>
 
@@ -43,13 +39,25 @@
 <script>
 import DatasetsCardList from '../components/DatasetsCardList.vue'
 import DatasetsFilter from '../components/DatasetsFilter.vue'
+import DatasetsSorter from '../components/DatasetsSorter.vue'
 
 export default {
   name: 'Datasets',
 
   components: {
     DatasetsCardList,
-    DatasetsFilter
+    DatasetsFilter,
+    DatasetsSorter
+  },
+
+  data() {
+    return {
+      sortFields: [
+        { name: 'Year', value: 'year' },
+        { name: 'Number of cells', value: 'ncells' },
+        { name: 'Number of cell types', value: 'cell_types' }
+      ]
+    }
   },
 
   computed: {
