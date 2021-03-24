@@ -13,7 +13,7 @@
 import DatasetCard from './DatasetCard.vue'
 
 export default {
-  name: 'DatasetCardList',
+  name: 'DatasetsCardList',
 
   components: {
     DatasetCard

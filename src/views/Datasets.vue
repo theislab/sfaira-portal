@@ -7,16 +7,16 @@
         >
           Filters
         </div>
-        <!-- <DropdownList
-            prompt="Eye colour..."
-            itemsGetter="eyeColours"
-            commitHook="setSelEyeColours"
-          />
-          <DropdownList
-            prompt="Height..."
-            itemsGetter="heights"
-            commitHook="setSelHeights"
-          /> -->
+        <DatasetsFilter prompt="Author..." field="author" />
+        <DatasetsFilter prompt="Year..." field="year" />
+        <DatasetsFilter prompt="Normalization..." field="normalization" />
+        <DatasetsFilter prompt="Organism..." field="organism" />
+        <DatasetsFilter prompt="Organ..." field="organ" />
+        <DatasetsFilter prompt="Sex..." field="sex" />
+        <DatasetsFilter prompt="Healthy?..." field="healthy" />
+        <DatasetsFilter prompt="State..." field="state" />
+        <DatasetsFilter prompt="Annotated?..." field="annotated" />
+        <DatasetsFilter prompt="Cell type..." field="cell_types" />
         <div
           class="w-full p-1 my-1 rounded-full bg-black text-center text-xl text-gray-100 font-bold"
         >
@@ -33,7 +33,7 @@
     <div class="px-1 w-full md:w-2/4 flex bg-blue-400 h-full">
       <div class="py-2 my-1 mx-auto overflow-auto flex-grow bg-green-400">
         <!-- {{ this.$store.state.datasets }} -->
-        <DatasetCardList :items="datasets" />
+        <DatasetsCardList :items="datasets" />
       </div>
     </div>
     <!-- </div> -->
@@ -41,18 +41,20 @@
 </template>
 
 <script>
-import DatasetCardList from '../components/DatasetCardList.vue'
+import DatasetsCardList from '../components/DatasetsCardList.vue'
+import DatasetsFilter from '../components/DatasetsFilter.vue'
 
 export default {
   name: 'Datasets',
 
   components: {
-    DatasetCardList
+    DatasetsCardList,
+    DatasetsFilter
   },
 
   computed: {
     datasets() {
-      return this.$store.state.datasets
+      return this.$store.getters.displayDatasets
     }
   }
 }
