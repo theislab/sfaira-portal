@@ -1,21 +1,21 @@
 <template>
-  <div class="relative w-full max-w-sm my-0 mx-auto">
+  <div class="relative w-full my-0 mx-auto">
     <input
       v-model.trim="inputValue"
-      class="w-full py-1 px-2 border border-transparent bg-blue-50 leading-6 outline-none rounded-lg focus:bg-white focus:border-blue-50 placeholder-opacity-70"
+      class="w-full py-1 px-2 border-2 border-yellow-300 bg-yellow-50 leading-6 outline-none rounded-lg focus:bg-white focus:border-pink-600 placeholder-yellow-600 placeholder-opacity-50"
       type="text"
       :placeholder="prompt"
       @click="openList()"
     />
     <div
       v-show="listOpen"
-      class="absolute w-full max-h-96 mt-1 overflow-y-auto bg-white shadow-lg rounded-lg z-50"
+      class="absolute w-full max-h-96 mt-1 overflow-y-auto bg-white shadow-lg rounded-lg border-2 border-pink-300 z-50"
     >
       <div
         v-for="item in itemList"
         v-show="itemVisible(item)"
         :key="item"
-        class="flex w-full py-2 px-2 cursor-pointer hover:bg-blue-50"
+        class="flex w-full py-2 px-2 cursor-pointer hover:bg-yellow-50"
         @click="selectItem(item)"
       >
         {{ item }}
@@ -25,7 +25,7 @@
       <div
         v-for="item in selectedItems"
         :key="item"
-        class="text-xs inline-flex items-center font-bold leading-sm px-3 py-1 mx-1 my-1 bg-blue-200 text-blue-700 rounded-full"
+        class="text-xs inline-flex items-center font-bold leading-sm px-3 py-1 mx-1 my-1 rounded-full text-white bg-gradient-to-t from-blue-300 to-purple-600"
       >
         {{ item }}
         <svg

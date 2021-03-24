@@ -1,11 +1,11 @@
 <template>
-  <div class="relative w-full max-w-sm my-0 mx-auto">
-    <div class="w-full max-h-96 mt-1 overflow-y-auto bg-white rounded-lg">
+  <div class="relative w-full my-0 mx-auto">
+    <div class="w-full max-h-96 mt-1">
       <div
         v-for="field in fields"
         :key="field"
-        class="w-full py-2 px-2 cursor-pointer hover:bg-blue-50"
-        :class="[field.value === selectedField ? 'bg-red-300' : '']"
+        class="w-full my-1 py-2 px-2 cursor-pointer border-2 border-yellow-300 text-yellow-600 rounded-2xl"
+        :class="[field.value === selectedField ? 'bg-gradient-to-t from-transparent to-pink-300 text-pink-600 font-bold border-pink-600' : '']"
         @click="select(field.value)"
       >
         {{ field.name }}

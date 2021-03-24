@@ -1,9 +1,9 @@
 <template>
-  <div class="hflex flex flex-wrap flex-grow bg-red-100 h-5/6">
-    <div class="px-1 w-full flex md:w-1/4 bg-blue-300 h-auto">
-      <div class="flex-grow bg-green-400 m-1">
+  <div class="hflex flex flex-wrap flex-grow h-5/6">
+    <div class="px-1 w-full flex md:w-1/4 h-auto">
+      <div class="flex-grow m-1">
         <div
-          class="w-full p-1 my-1 rounded-full bg-black text-center text-xl text-gray-100 font-bold"
+          class="w-full p-1 my-1 rounded-full bg-gradient-to-t from-yellow-300 to-pink-600 text-center text-xl text-gray-100 font-bold"
         >
           Filters
         </div>
@@ -18,7 +18,7 @@
         <DatasetsFilter prompt="Annotated?..." field="annotated" />
         <DatasetsFilter prompt="Cell type..." field="cell_types" />
         <div
-          class="w-full p-1 my-1 rounded-full bg-black text-center text-xl text-gray-100 font-bold"
+          class="w-full p-1 my-1 rounded-full bg-gradient-to-t from-yellow-300 to-pink-600 text-center text-xl text-gray-100 font-bold"
         >
           Sorting
         </div>
@@ -26,13 +26,11 @@
       </div>
     </div>
 
-    <div class="px-1 w-full md:w-2/4 flex bg-blue-400 h-full">
-      <div class="py-2 my-1 mx-auto overflow-auto flex-grow bg-green-400">
-        <!-- {{ this.$store.state.datasets }} -->
+    <div class="px-1 w-full md:w-2/4 flex h-full">
+      <div class="py-2 my-1 mx-auto overflow-auto flex-grow">
         <DatasetsCardList :items="datasets" />
       </div>
     </div>
-    <!-- </div> -->
   </div>
 </template>
 
