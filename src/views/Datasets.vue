@@ -3,7 +3,7 @@
     <div class="px-1 w-full flex md:w-1/4 h-auto">
       <div class="flex-grow m-1">
         <div
-          class="w-full p-1 my-1 rounded-full bg-gradient-to-t from-yellow-300 to-pink-600 text-center text-xl text-gray-100 font-bold"
+          class="w-full p-1 my-1 rounded-full bg-gradient-to-t from-orange-300 to-orange-600 text-center text-xl text-gray-100 font-bold"
         >
           Filters
         </div>
@@ -18,7 +18,7 @@
         <DatasetsFilter prompt="Annotated?..." field="annotated" />
         <DatasetsFilter prompt="Cell type..." field="cell_types" />
         <div
-          class="w-full p-1 my-1 rounded-full bg-gradient-to-t from-yellow-300 to-pink-600 text-center text-xl text-gray-100 font-bold"
+          class="w-full p-1 my-1 rounded-full bg-gradient-to-t from-orange-300 to-orange-600 text-center text-xl text-gray-100 font-bold"
         >
           Sorting
         </div>

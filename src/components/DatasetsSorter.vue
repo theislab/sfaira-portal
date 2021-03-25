@@ -4,11 +4,11 @@
       <div
         v-for="field in fields"
         :key="field"
-        class="w-full my-1 py-2 px-2 cursor-pointer border-2 border-yellow-300 text-yellow-600 rounded-2xl hover:border-pink-600 hover:bg-pink-200"
+        class="w-full my-1 py-1 px-2 cursor-pointer border-2 rounded-2xl hover:border-orange-600 hover:bg-orange-200 hover:text-orange-600"
         :class="[
           field.value === selectedField
-            ? 'bg-gradient-to-t from-transparent to-pink-300 text-pink-600 font-bold border-pink-600'
-            : ''
+            ? 'bg-orange-300 text-orange-500 font-bold border-orange-500'
+            : 'border-orange-300 text-orange-300'
         ]"
         @click="select(field.value)"
       >

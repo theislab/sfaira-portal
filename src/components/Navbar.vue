@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gradient-to-t from-yellow-300 to-pink-600">
+  <nav class="bg-gradient-to-t from-purple-700 to-purple-900">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <!-- Mobile menu -->
@@ -7,7 +7,7 @@
           <!-- Mobile menu button-->
           <button
             type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-100 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
@@ -80,7 +80,7 @@
               <template v-for="item in items" :key="item.title">
                 <router-link
                   :to="item.link"
-                  class="border-2 bg-white border-yellow-600 text-yellow-600 hover:bg-pink-600 hover:text-white px-3 py-2 rounded-full text-sm font-medium"
+                  class="border-2 bg-white border-yellow-600 text-orange-600 hover:bg-orange-100 px-3 py-2 rounded-full text-sm font-medium"
                   >{{ item.title }}</router-link
                 >
               </template>
@@ -160,7 +160,7 @@ export default {
 <style scoped>
 @layer components {
   a.router-link-exact-active {
-    @apply bg-gradient-to-t from-yellow-300 to-pink-600 text-white font-bold border-white;
+    @apply bg-gradient-to-t from-yellow-300 to-yellow-600 text-white font-bold border-white hover:border-yellow-600 hover:text-yellow-600;
   }
 }
 </style>

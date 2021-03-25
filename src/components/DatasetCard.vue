@@ -5,10 +5,10 @@
     <div
       :class="[
         open
-          ? 'bg-gradient-to-t from-yellow-300 to-pink-600 font-bold hover:bg-pink-600'
+          ? 'bg-gradient-to-t from-orange-300 to-orange-600 border-orange-400 font-bold'
           : ''
       ]"
-      class="px-4 py-5 sm:px-6 rounded-lg cursor-pointer border-4 border-yellow-300 hover:border-pink-600 hover:bg-pink-200"
+      class="px-4 py-5 sm:px-6 rounded-lg cursor-pointer border-4 border-orange-300 hover:border-orange-600 hover:bg-orange-200"
       @click="toggleOpen"
     >
       <p
@@ -26,7 +26,7 @@
       </p>
     </div>
     <div>
-      <dl :class="[open ? 'border-4 border-yellow-400' : 'hidden']">
+      <dl :class="[open ? 'border-4 border-orange-400' : 'hidden']">
         <DatasetCardField name="ID" :value="data.id" />
         <DatasetCardField name="Author" :value="data.author" />
         <DatasetCardField

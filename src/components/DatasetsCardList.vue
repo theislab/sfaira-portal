@@ -1,6 +1,6 @@
 <template>
   <div class="py-2 mx-auto overflow-auto flex-grow h-full">
-    <div class="text-2xl text-center text-yellow-600">
+    <div class="text-2xl text-center text-orange-600">
       Showing <span class="text-purple-600">{{ items.length }}</span> datasets
     </div>
     <div class="flex flex-wrap mx-1">
