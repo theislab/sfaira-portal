@@ -1,9 +1,10 @@
 <template>
   <div
-    class="bg-white shadow overflow-hidden sm:rounded-lg w-full my-1 mx-1 px-1"
+    class="bg-white shadow-md overflow-hidden sm:rounded-lg w-full my-1 mx-1"
   >
     <div
-      class="px-4 py-5 sm:px-6 border-4 border-green-300 border-opacity-0 hover:border-opacity-100"
+      :class="[open ? 'bg-gradient-to-t from-yellow-300 to-pink-600 font-bold hover:bg-pink-600' : '']"
+      class="px-4 py-5 sm:px-6 rounded-lg border-4 border-yellow-300 hover:border-pink-600 hover:bg-pink-200"
       @click="toggleOpen"
     >
       <p
@@ -12,13 +13,13 @@
       >
         {{ data.id }}
       </p>
-      <p class="mt-1 max-w-2xl text-lg text-gray-900">
+      <p class="mt-1 max-w-2xl text-lg" :class="[open ? 'text-white' : 'text-gray-900']">
         {{ data.author }} {{ data.organism }} {{ data.organ[0] }}
         {{ data.year }}
       </p>
     </div>
-    <div class="border-t border-gray-200">
-      <dl :class="[open ? '' : 'hidden']">
+    <div>
+      <dl :class="[open ? 'border-4 border-yellow-400' : 'hidden']">
         <DatasetCardField name="ID" :value="data.id" />
         <DatasetCardField name="Author" :value="data.author" />
         <DatasetCardField

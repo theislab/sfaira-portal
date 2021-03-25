@@ -2,7 +2,7 @@
   <div class="relative w-full my-0 mx-auto">
     <input
       v-model.trim="inputValue"
-      class="w-full py-1 px-2 border-2 border-yellow-300 bg-yellow-50 leading-6 outline-none rounded-lg focus:bg-white focus:border-pink-600 placeholder-yellow-600 placeholder-opacity-50"
+      class="w-full py-1 px-2 border-2 border-yellow-300 bg-yellow-50 leading-6 outline-none rounded-lg focus:bg-white focus:border-pink-600 placeholder-yellow-600 focus:placeholder-pink-600 placeholder-opacity-50 hover:border-pink-600 hover:bg-pink-200"
       type="text"
       :placeholder="prompt"
       @click="openList()"
