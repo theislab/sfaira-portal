@@ -5,7 +5,11 @@
         v-for="field in fields"
         :key="field"
         class="w-full my-1 py-2 px-2 cursor-pointer border-2 border-yellow-300 text-yellow-600 rounded-2xl hover:border-pink-600 hover:bg-pink-200"
-        :class="[field.value === selectedField ? 'bg-gradient-to-t from-transparent to-pink-300 text-pink-600 font-bold border-pink-600' : '']"
+        :class="[
+          field.value === selectedField
+            ? 'bg-gradient-to-t from-transparent to-pink-300 text-pink-600 font-bold border-pink-600'
+            : ''
+        ]"
         @click="select(field.value)"
       >
         {{ field.name }}

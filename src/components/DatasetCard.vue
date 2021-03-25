@@ -3,8 +3,12 @@
     class="bg-white shadow-md overflow-hidden sm:rounded-lg w-full my-1 mx-1"
   >
     <div
-      :class="[open ? 'bg-gradient-to-t from-yellow-300 to-pink-600 font-bold hover:bg-pink-600' : '']"
-      class="px-4 py-5 sm:px-6 rounded-lg border-4 border-yellow-300 hover:border-pink-600 hover:bg-pink-200"
+      :class="[
+        open
+          ? 'bg-gradient-to-t from-yellow-300 to-pink-600 font-bold hover:bg-pink-600'
+          : ''
+      ]"
+      class="px-4 py-5 sm:px-6 rounded-lg cursor-pointer border-4 border-yellow-300 hover:border-pink-600 hover:bg-pink-200"
       @click="toggleOpen"
     >
       <p
@@ -13,7 +17,10 @@
       >
         {{ data.id }}
       </p>
-      <p class="mt-1 max-w-2xl text-lg" :class="[open ? 'text-white' : 'text-gray-900']">
+      <p
+        class="mt-1 max-w-2xl text-lg"
+        :class="[open ? 'text-white' : 'text-gray-900']"
+      >
         {{ data.author }} {{ data.organism }} {{ data.organ[0] }}
         {{ data.year }}
       </p>

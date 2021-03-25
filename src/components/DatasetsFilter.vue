@@ -2,14 +2,14 @@
   <div class="relative w-full my-0 mx-auto">
     <input
       v-model.trim="inputValue"
-      class="w-full py-1 px-2 border-2 border-yellow-300 bg-yellow-50 leading-6 outline-none rounded-lg focus:bg-white focus:border-pink-600 placeholder-yellow-600 focus:placeholder-pink-600 placeholder-opacity-50 hover:border-pink-600 hover:bg-pink-200"
+      class="w-full py-1 px-2 border-2 border-yellow-300 bg-yellow-50 leading-6 outline-none rounded-2xl focus:bg-white focus:border-pink-600 placeholder-yellow-600 focus:placeholder-pink-600 placeholder-opacity-50 hover:border-pink-600 hover:bg-pink-200"
       type="text"
       :placeholder="prompt"
       @click="openList()"
     />
     <div
       v-show="listOpen"
-      class="absolute w-full max-h-96 mt-1 overflow-y-auto bg-white shadow-lg rounded-lg border-2 border-pink-300 z-50"
+      class="absolute w-full max-h-96 mt-1 overflow-y-auto bg-white shadow-lg rounded-2xl border-2 border-pink-300 z-50"
     >
       <div
         v-for="item in itemList"
