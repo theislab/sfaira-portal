@@ -20,7 +20,9 @@ function getUniqueValues(itemsList, field) {
 
   const uniqueValues = [...new Set(allValues)]
 
-  return uniqueValues.sort()
+  return uniqueValues.sort((a, b) =>
+    a.localeCompare(b, undefined, { sensitivity: 'base' })
+  )
 }
 
 function filterItemsList(itemsList, field, values) {
