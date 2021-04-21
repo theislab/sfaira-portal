@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
@@ -18,7 +19,10 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink
-    }
+    },
+    fontFamily: {
+      'sans': ['Work Sans', ...defaultTheme.fontFamily.sans]
+    },
   },
   variants: {
     extend: {
