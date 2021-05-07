@@ -25,7 +25,7 @@ jobs:
       run: npm ci
 
     - name: Build site
-      run: npm run build --if-present
+      run: npm run build --if-present --base=/sfaira-portal/
 
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v3
