@@ -18,6 +18,11 @@ const routes = [
     path: import.meta.env.BASE_URL + 'about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/:catchAll(.*)*',
+    name: 'PageNotFound',
+    component: Home
   }
 ]
 
