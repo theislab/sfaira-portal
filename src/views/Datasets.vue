@@ -9,11 +9,16 @@
         </div>
         <DatasetsFilter prompt="Author..." field="author" />
         <DatasetsFilter prompt="Year..." field="year" />
+        <DatasetsFilter prompt="Assay..." field="assay" />
         <DatasetsFilter prompt="Normalization..." field="normalization" />
         <DatasetsFilter prompt="Organism..." field="organism" />
         <DatasetsFilter prompt="Organ..." field="organ" />
+        <DatasetsFilter prompt="Source..." field="sample_source" />
+        <DatasetsFilter
+          prompt="Developmental stages..."
+          field="development_stage"
+        />
         <DatasetsFilter prompt="Sex..." field="sex" />
-        <DatasetsFilter prompt="Healthy?..." field="healthy" />
         <DatasetsFilter prompt="State..." field="state" />
         <DatasetsFilter prompt="Annotated?..." field="annotated" />
         <DatasetsFilter prompt="Cell type..." field="cell_types" />

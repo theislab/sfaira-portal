@@ -39,13 +39,17 @@
           name="Number of cells"
           :value="data.ncells.toString()"
         />
+        <DatasetCardField name="Assay" :value="data.assay" />
         <DatasetCardField name="Normalization" :value="data.normalization" />
         <DatasetCardField name="Organism" :value="data.organism" />
         <DatasetCardField name="Organ(s)" :value="data.organ.join(', ')" />
-        <DatasetCardField name="Age(s)" :value="data.age.join(', ')" />
+        <DatasetCardField name="Source" :value="data.sample_source" />
+        <DatasetCardField
+          name="Developmental stage(s)"
+          :value="data.development_stage.join(', ')"
+        />
         <DatasetCardField name="Sex(es)" :value="data.sex.join(', ')" />
-        <DatasetCardField name="Healthy?" :value="data.healthy" />
-        <DatasetCardField name="State" :value="data.state" />
+        <DatasetCardField name="State(s)" :value="data.state.join(', ')" />
         <DatasetCardField name="Annotated?" :value="data.annotated" />
         <DatasetCardField
           name="Cell types"

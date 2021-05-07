@@ -31,7 +31,7 @@ export default {
     },
     value: {
       type: String,
-      default: () => 'Value'
+      default: () => ''
     },
     link: {
       type: String,
