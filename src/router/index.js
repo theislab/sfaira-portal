@@ -5,17 +5,17 @@ import Datasets from '../views/Datasets.vue'
 
 const routes = [
   {
-    path: '/',
+    path: import.meta.env.BASE_URL,
     name: 'Home',
     component: Home
   },
   {
-    path: '/datasets',
+    path: import.meta.env.BASE_URL + 'datasets',
     name: 'Datasets',
     component: Datasets
   },
   {
-    path: '/about',
+    path: import.meta.env.BASE_URL + 'about',
     name: 'About',
     component: About
   }

@@ -139,9 +139,9 @@ export default {
     return {
       mobileMenuOpen: false,
       items: [
-        { title: 'Home', link: '/' },
-        { title: 'Datasets', link: '/Datasets' },
-        { title: 'About', link: '/About' }
+        { title: 'Home', link: import.meta.env.BASE_URL },
+        { title: 'Datasets', link: import.meta.env.BASE_URL + 'Datasets' },
+        { title: 'About', link: import.meta.env.BASE_URL + 'About' }
       ]
     }
   },
