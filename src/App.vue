@@ -1,8 +1,7 @@
 <template>
   <div class="flex flex-col h-screen">
     <Navbar />
-    <!-- prettier-ignore-attribute base -->
-    <router-view base=import.meta.env.BASE_URL />
+    <router-view />
   </div>
 </template>
 
