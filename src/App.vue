@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen">
     <Navbar />
-    <router-view />
+    <router-view base="import.meta.env.BASE_URL" />
   </div>
 </template>
 
