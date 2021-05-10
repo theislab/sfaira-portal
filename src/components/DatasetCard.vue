@@ -86,6 +86,11 @@ export default {
   methods: {
     toggleOpen() {
       this.open = !this.open
+      if (this.open) {
+        this.$mixpanel.track('View dataset', {
+          id: this.data.id
+        })
+      }
     }
   }
 }

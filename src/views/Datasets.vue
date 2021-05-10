@@ -67,6 +67,14 @@ export default {
     datasets() {
       return this.$store.getters.displayDatasets
     }
+  },
+
+  mounted() {
+    this.$nextTick(function () {
+      this.$mixpanel.track('Open page', {
+        view: 'Datasets'
+      })
+    })
   }
 }
 </script>

@@ -84,3 +84,17 @@
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Home',
+
+  mounted() {
+    this.$nextTick(function () {
+      this.$mixpanel.track('Open page', {
+        view: 'Home'
+      })
+    })
+  }
+}
+</script>
