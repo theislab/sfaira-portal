@@ -15,7 +15,7 @@
     </p>
     <div class="mx-auto">
       <router-link
-        to="/Datasets"
+        :to="views.datasets"
         class="border-2 border-yellow-600 px-3 py-2 mx-2 rounded-full text-3xl bg-gradient-to-t from-yellow-300 to-yellow-600 text-white font-bold hover:border-yellow-600 hover:text-yellow-600"
       >
         View datasets
@@ -76,7 +76,7 @@
       If any part of sfaira is useful to you we would appreciate you taking the
       time to cite the sfaira publication, see the
       <router-link
-        to="/About"
+        :to="views.about"
         class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
         >about page</router-link
       >
@@ -88,6 +88,15 @@
 <script>
 export default {
   name: 'Home',
+
+  data() {
+    return {
+      views: {
+        datasets: import.meta.env.BASE_URL + 'Datasets',
+        about: import.meta.env.BASE_URL + 'About'
+      }
+    }
+  },
 
   mounted() {
     this.$nextTick(function () {
