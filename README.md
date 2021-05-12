@@ -33,17 +33,6 @@ npm run dev
 This will launch a local webserver which you can access using the provided URL.
 It is important to keep an eye on the terminal where you run this command as and messages/warnings/errors produced when building the site will be displayed here.
 
-### Previewing production
-
-Similar to launching you can preview the production build using:
-
-```bash
-npm run preview
-```
-
-This will run the full build process (with minimisation of JavaScript files etc.) before launching a local server.
-The results should be the same as the development server but it's worth checking just in case.
-
 ### Building for production
 
 The production output for deployment can be created with:
@@ -52,8 +41,19 @@ The production output for deployment can be created with:
 npm run build
 ```
 
-This will create a `dist/` folder with the built website.
-Unless something needs to be debugged you shouldn't need to run this locally as the deployment build is handled by a [GitHub actions](https://github.com/theislab/sfaira-portal/actions) workflow.
+This will create a `dist/` folder with the production build website.
+Deployment of the website is handled by a [GitHub actions](https://github.com/theislab/sfaira-portal/actions) workflow but it can still sometimes be useful to build it locally for debugging.
+
+### Previewing production
+
+Similar to launching the dev server you can preview the production build using:
+
+```bash
+npm run serve
+```
+
+This will let you view the contents of `dist/`.
+The results should be the same as the development server but it's worth checking just in case.
 
 ## Citation
 
