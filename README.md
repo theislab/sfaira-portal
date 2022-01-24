@@ -59,7 +59,7 @@ The results should be the same as the development server but it's worth checking
 
 If you use Sfaira or the Sfaira portal for you work please cite the following publication:
 
-> David S. Fischer, Leander Dony, Martin König, Abdul Moeed, Luke Zappia, Lukas Huemos, Sophie Tritschler, Olle Holmberg, Hananeh Aliee, Fabian J. Theis.
+> David S. Fischer, Leander Dony, Martin König, Abdul Moeed, Luke Zappia, Lukas Heumos, Sophie Tritschler, Olle Holmberg, Hananeh Aliee, Fabian J. Theis.
 > _Sfaira accelerates data and model reuse in single cell genomics_.
 > Genome Biology. 2021. DOI: [10.1186/s13059-021-02452-6](https://doi.org/10.1186/s13059-021-02452-6)
 
