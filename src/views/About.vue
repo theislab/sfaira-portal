@@ -16,14 +16,15 @@
       </p>
       <p class="text-lg font-light my-1">
         David S. Fischer, Leander Dony, Martin König, Abdul Moeed, Luke Zappia,
-        Sophie Tritschler, Olle Holmberg, Hananeh Aliee, Fabian J. Theis
+        Lukas Heumos, Sophie Tritschler, Olle Holmberg, Hananeh Aliee, Fabian J.
+        Theis
       </p>
       <p class="text-lg my-1">
-        <span class="italic">bioRxiv</span> 2020.12.16.419036; doi:
+        <span class="italic">Genome Biology</span> 2021;22:248; doi:
         <a
-          href="https://doi.org/10.1101/2020.12.16.419036"
+          href="https://doi.org/10.1186/s13059-021-02452-6"
           class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-          >https://doi.org/10.1101/2020.12.16.419036</a
+          >https://doi.org/10.1186/s13059-021-02452-6</a
         >
       </p>
     </div>
