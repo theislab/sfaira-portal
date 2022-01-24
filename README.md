@@ -59,21 +59,22 @@ The results should be the same as the development server but it's worth checking
 
 If you use Sfaira or the Sfaira portal for you work please cite the following publication:
 
-> David S. Fischer, Leander Dony, Martin König, Abdul Moeed, Luke Zappia, Sophie Tritschler, Olle Holmberg, Hananeh Aliee, Fabian J. Theis.
+> David S. Fischer, Leander Dony, Martin König, Abdul Moeed, Luke Zappia, Lukas Huemos, Sophie Tritschler, Olle Holmberg, Hananeh Aliee, Fabian J. Theis.
 > _Sfaira accelerates data and model reuse in single cell genomics_.
-> bioRxiv. 2020. DOI: [10.1101/2020.12.16.419036](https://doi.org/10.1101/2020.12.16.419036)
->
+> Genome Biology. 2021. DOI: [10.1186/s13059-021-02452-6](https://doi.org/10.1186/s13059-021-02452-6)
 
 ```bibtex
-@UNPUBLISHED{Fischer2020-ed,
+@ARTICLE{Fischer2021-xk,
   title    = "Sfaira accelerates data and model reuse in single cell genomics",
-  author   = "Fischer, David Sebastian and Dony, Leander and Koenig, Martin and
-              Moeed, Abdul and Zappia, Luke and Tritschler, Sophie and
-              Holmberg, Olle and Aliee, Hananeh and Theis, Fabian J",
-  journal  = "bioRxiv",
-  pages    = "2020.12.16.419036",
-  month    =  dec,
-  year     =  2020,
+  author   = "Fischer, David S and Dony, Leander and K{\"o}nig, Martin and
+              Moeed, Abdul and Zappia, Luke and Heumos, Lukas and Tritschler,
+              Sophie and Holmberg, Olle and Aliee, Hananeh and Theis, Fabian J",
+  journal  = "Genome Biol.",
+  volume   =  22,
+  number   =  1,
+  pages    = "248",
+  month    =  aug,
+  year     =  2021,
   language = "en"
 }
 ```
